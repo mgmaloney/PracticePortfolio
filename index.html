@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Matthew Maloney Portfolio</title>
 </head>
 <body>
     <header>
         <nav>
-            <h2>Matthew Maloney</h2>
+            <h2 id="myname">Matthew Maloney</h2>
             <ul>
-                <li><a href='ndex.html'>About Me</a></li>
+                <li><a href='index.html'>About Me</a></li>
                 <li><a href='projects.html'>Projects</a></li>
                 <li><a href='skills.html'>Skills</a></li>
                 <li><a href='contact.html'>Contact</a></li>
@@ -20,7 +20,16 @@
     </header>
     <main>
         <h2>About Me</h2>
-        <p></p>
+        <p>I'm a mental health therapist who has taken an unorthodox career path to find an appreciation of code.  My wife works in development and slowly convinced me to join her.  Eventually it just clicked!</p>
+        <p>Fun fact I've been programming for: <span id="days"></span> days!</p>
+        <img src="/yang.jpg" alt="image of a handsome cat sitting on a perch">
     </main>
+    <script>
+        let daysElement = document.getElementById('days');
+        let today = date.Now;
+        let firstCodeDate = date.parse('26 Oct 2022 00:12:00 GMT');
+        let differenceDays = Math.round((today - firstCodeDate)/(1000 * 3600 * 24));
+        daysElement = differenceDays;
+    </script>
 </body>
 </html>
