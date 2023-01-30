@@ -1,0 +1,70 @@
+* {
+    font-family: "Vesper Libre", "Merriweather", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0 200px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    width: 100%;
+}    
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.navlist {
+    display: inline-flex;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 5px;
+}
+
+#yang {
+    display: inline-flex;
+    height: 300px;
+    width: 250px;
+    border: 0px solid black;
+    border-radius: 25%;
+    /* flex-grow: 1; */
+}
+
+.aboutheader {
+    margin: 0;
+    padding: 0;
+}
+
+.aboutme {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.description {
+    width: 350px;
+    flex-grow: 1;
+}
+
+#contactlist {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+#email {
+    text-decoration: underline;
+}
+
+#email:hover {
+    color: rgb(172, 172, 172);
+}

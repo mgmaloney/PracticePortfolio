@@ -5,31 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matthew Maloney Portfolio</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&family=Vesper+Libre&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
             <h2 id="myname">Matthew Maloney</h2>
-            <ul>
-                <li><a href='index.html'>About Me</a></li>
-                <li><a href='projects.html'>Projects</a></li>
-                <li><a href='skills.html'>Skills</a></li>
-                <li><a href='contact.html'>Contact</a></li>
+            <ul >
+                <li class="navlist"><a href='index.html'>About Me</a></li>
+                <li class="navlist"><a href='projects.html'>Projects</a></li>
+                <li class="navlist"><a href='skills.html'>Skills</a></li>
+                <li class="navlist"><a href='contact.html'>Contact</a></li>
+
             </ul>
         </nav>
     </header>
     <main>
-        <h2>About Me</h2>
-        <p>I'm a mental health therapist who has taken an unorthodox career path to find an appreciation of code.  My wife works in development and slowly convinced me to join her.  Eventually it just clicked!</p>
-        <p>Fun fact I've been programming for: <span id="days"></span> days!</p>
-        <img src="/yang.jpg" alt="image of a handsome cat sitting on a perch">
+        
+        
+        <div class="aboutme">
+            <div class="description">
+                <h2 class="aboutheader">About Me</h2>
+                <p>I'm a mental health therapist who has taken an unorthodox career path to find an appreciation of code.  My wife works in development and slowly convinced me to join her.  Eventually it just clicked!</p>
+                <p>Fun fact I've been programming for: <span id="days"></span> days!</p>
+            </div>
+            <img id='yang' src="/yang.jpg" alt="image of a handsome cat sitting on a perch">
+          
+        </div>
     </main>
+    <footer>
+        <ul id="contactlist">
+            <li>Contact at: <a id='email' href='mailto:matthewmaloneydev@gmail.com'>matthewmaloneydev@gmail.com</a></li>
+        </ul>
+    </footer>
     <script>
         let daysElement = document.getElementById('days');
-        let today = date.Now;
-        let firstCodeDate = date.parse('26 Oct 2022 00:12:00 GMT');
+        let today = Date.now();
+
+        let firstCodeDate = Date.parse('26 Oct 2022 00:12:00 GMT');
         let differenceDays = Math.round((today - firstCodeDate)/(1000 * 3600 * 24));
-        daysElement = differenceDays;
+        console.log(differenceDays);
+        daysElement.innerText = differenceDays;
     </script>
 </body>
 </html>
