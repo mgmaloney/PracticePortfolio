@@ -22,6 +22,7 @@ a {
 
 }
 
+
 .navlist {
     display: inline-flex;
     font-weight: 600;
@@ -53,6 +54,7 @@ a {
 .description {
     width: 350px;
     flex-grow: 1;
+    font-size: 19px;
 }
 
 #contactlist {
@@ -61,10 +63,29 @@ a {
     justify-content: center;
 }
 
-#email {
+.email {
     text-decoration: underline;
 }
 
-#email:hover {
+.email:hover {
     color: rgb(172, 172, 172);
+}
+
+.contactlinks {
+    display: inline-flex;
+    align-items: center;
+}
+
+.contactmessage {
+    font-size: 20px;
+}
+
+.logolinks {
+    max-width: 50px;
+
+}
+
+.projlist {
+    list-style-type: square;
+    font-size: 25px;
 }
